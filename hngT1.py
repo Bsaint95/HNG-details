@@ -4,7 +4,7 @@ details =  {"slackUsername": "Samjero02", "backend": True, "age": 28, "Bio": "An
 
 api = Flask(__name__)
 
-@api.route('/details', methods=['GET'])
+@api.route('/', methods=['GET'])
 def get_details():
   return json.dumps(details)
 
